@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod
+  labels:
+    env: test
+spec:
+  containers:
+    - name: c1
+      image: ubuntu
+      imagePullPolicy: IfNotPresent
+      command: ["/bin/bash", "-c", "while true; do echo Hello Pod; sleep 15; done"]
