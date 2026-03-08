@@ -10,13 +10,9 @@ on:
 jobs:
   test_context_variables:
     runs-on: ubuntu-latest
-    env:
-      NAME: Mansoor
     steps:
       - name: "Testing Context Variables"
       - uses: actions/checkout@v4
-        run: |
-        echo "Repository Name: ${{ github.reposiory }}"
-        echo "Workflow Name: ${{ github.workflow }}"
-        echo "Triggered by: ${{ github.triggering_actor }}"
+        run: echo "Repository Name : ${{ github.reposiory }}"
+          
 
