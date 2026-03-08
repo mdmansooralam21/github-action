@@ -19,6 +19,6 @@ jobs:
     steps: 
       - uses: actions/checkout@v4
       - name: Configuration Variables
-        run: echo "Hello $NAME, the $cloud project ID is ${{ PROJECT_ID }}"
+        run: echo "Hello $NAME, the $cloud project ID is ${{ vars.PROJECT_ID }}"
         env:
           Hello: World
