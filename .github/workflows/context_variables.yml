@@ -11,8 +11,9 @@ jobs:
   test_context_variables:
     runs-on: ubuntu-latest
     steps:
-      - name: "Testing Context Variables"
       - uses: actions/checkout@v4
+      - name: "Testing Context Variables"
+  
         run: echo "Repository Name is ${{ github.reposiory }}"
           
 
