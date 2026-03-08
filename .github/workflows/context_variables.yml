@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: "Testing Context Variables"
       - uses: actions/checkout@v4
-        run: echo "Repository Name : ${{ github.reposiory }}"
+        run: echo "Repository Name is ${{ github.reposiory }}"
           
 
