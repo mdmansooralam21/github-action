@@ -20,8 +20,9 @@ on:
 jobs:
   add_numbers:
     runs-on: ubuntu-latest
-
+    
     steps:
+      #- uses: actions/checkout@v4
       - name: Add numbers
         id: sum
         run: echo "::set-output name=sum::$((${{ inputs.number1 }} + ${{ inputs.number2 }}))"
