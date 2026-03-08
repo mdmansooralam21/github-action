@@ -13,7 +13,7 @@ jobs:
     env:
       NAME: Mansoor
     steps:
-      - name: Testing Context Variables
+      - name: "Testing Context Variables"
       - uses: actions/checkout@v4
         run: |
           echo "Repository Name: ${{ github.reposiory }}"
