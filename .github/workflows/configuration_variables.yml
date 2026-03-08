@@ -3,10 +3,8 @@ name: Configuration Variables
 on: 
   push:
     branches: [ "main" ]
-
-  pull-requests:
+  pull-request:
     branches: [ "main" ]
-
   workflow_dispatch:
 
 env:
