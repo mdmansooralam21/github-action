@@ -15,10 +15,10 @@ env:
 jobs:
   greeting_configuration:
 
-  runs-on: ubuntu-latest
-  env:
-    NAME: Mansoor
-  steps: 
-    - uses: actions/checkout@v4
-    - name: Configuration Variables
-      run: echo "Hello $NAME, the $cloud project ID is ${{ PROJECT_ID }}"
+    runs-on: ubuntu-latest
+    env:
+      NAME: Mansoor
+    steps: 
+      - uses: actions/checkout@v4
+      - name: Configuration Variables
+        run: echo "Hello $NAME, the $cloud project ID is ${{ PROJECT_ID }}"
